@@ -31,8 +31,7 @@ $(document).ready(function(){
     $('.menus .menu ul li a').on('click', function(e) {
         e.preventDefault();
         var id = $(this).attr('href'),
-        targeOffset = $('.'+id).offset().top;
-        console.log("Hello World");
+        targeOffset = $('.'+id).offset().top;        
         $('html, body').animate({
             scrollTop: targeOffset - 100
         }, 500);
