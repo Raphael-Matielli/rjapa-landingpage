@@ -38,4 +38,8 @@ $(document).ready(function(){
         }, 500);
     });
     
+    function myFunction() {
+        console.log("Hello World");
+    }
+        
 });

@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <title>Base Landing Page</title>
     <link href="resources/css/css.css" rel="stylesheet"/>
-    <link href="fontawesome/css/all.min.css" rel="stylesheet"/>    
+    <link href="fontawesome/css/all.min.css" rel="stylesheet"/>      
 </head>
 <body>    
 	<header>
@@ -38,10 +38,11 @@
         </div>
 	</header>	
     <section class="quem_sou_eu"> 
-        <div class="container">
+        <div class="container">            
             <div class="conteudo">
                 <img src="resources/imagens/foto_principal.png">
                 <div class="texto">
+                    <button onclick="myFunction()">Click me</button>
                     <h1 class="titulo">Quem sou eu?</h1>
                     <div class="descricao">
                         <p Align="justify">						 
@@ -199,7 +200,7 @@
                 </div>
                 <div class="lista">
                     <div class="item">
-                        <iframe src="https://player.twitch.tv/?video=1049452154&autoplay=false&parent=localhost"							
+                        <iframe src="https://player.twitch.tv/?video=1049452154&autoplay=false&parent=https://raphael-matielli.github.io/rjapa-landingpage/"							
                                 frameborder="0" 
                                 allowfullscreen="false" 
                                 scrolling="no">
@@ -291,9 +292,10 @@
 			</div>
 		</div>
 	</footer>
-    <script src="<?=URL_BASE?>resources/js/jquery/jquery.min.js"></script>
-	<script src="<?=URL_BASE?>resources/js/slick/slick.min.js"></script>
-	<script src="<?=URL_BASE?>resources/js/js.min.js"></script>
+    <script src="resources/js/jquery/jquery.min.js"></script>
+	<script src="resources/js/slick/slick.min.js"></script>
+	<script src="resources/js/js.js"></script>
+    <script src="resources/js/js.min.js"></script>
 </body>
 </html>
 
