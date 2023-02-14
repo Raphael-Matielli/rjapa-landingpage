@@ -1,0 +1,175 @@
+header{
+    display: inline-flex;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    z-index: 2;
+
+	.container{        
+        display: inline-flex;        
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        .btn-menu{
+            color: #fff;
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            padding: 0 20px;
+            background-color: #333;
+            cursor: pointer;
+
+            @include desktop{
+                display: none;
+            }
+        }
+
+        .social{
+            width: 100%;
+            padding: 10px 10px;
+            display: inline-flex;
+            align-items: center;
+            color: #333;
+            
+            @include desktop{
+                color: #fff;
+                padding: 0px 0px 0px 25px;
+                width: auto;
+            }
+            
+            @include desktop-hd{
+                padding: 0px 0px 0px 45px;
+            }
+
+            a{
+                color: #333;                
+                padding-left: 14px;
+
+                @include desktop{
+                    color: #fff;
+                }
+            }
+        }
+        
+        .menus{      
+            
+            &.active{
+                right: 0;
+                &:before{
+                    width: 100vw;
+                }
+            }
+            &:before{
+                width: 0px;
+                height: 100%;
+                background-color: #0000005c;
+                content: "";
+                position: absolute;
+                left: -100vw;
+                transition: 0.5s;
+            }
+            display: block;
+            position: fixed;
+            right: -250px;
+            width: 250px;
+            background-color: #fff;
+            top: 99px;
+            height: calc(100vh - 99px);
+            transition: 0.5s;
+            
+            @include desktop{                
+                align-items: center;
+                justify-content: flex-end;
+                width: 100%;
+                position: relative;
+                right: initial;                
+                background-color: transparent;
+                top: initial;
+                height: initial;
+                display: inline-flex;
+            }
+            
+
+            .menu{
+                width: 100%;
+                display: block;
+                
+                @include desktop{
+                    width: auto;  
+                }
+                
+                ul{
+                    flex-wrap: wrap;
+                    display: inline-flex;
+                    width: auto;
+                    justify-content: space-between;
+                    
+                    @include desktop{
+                        flex-wrap: nowrap;
+                    }
+
+                    li{                        
+                        width: 100%;
+                        padding: 10px 10px;
+
+                        @include desktop{
+                            padding: 0px 0px 0px 45px;
+                            width: auto;
+                        }
+                    
+                        @include desktop-hd{
+                            padding: 0px 45px;
+                        }
+                    }
+                    a{
+                        color: #333;                        
+                        position: relative;
+                        padding: 9px 0;
+                        &:after{
+                            width: 0;
+                            height: 2px;
+                            background-color: #333;
+                            
+                            content: ' ';
+                            bottom: 0px;
+                            position: absolute;
+                            left: 0px;
+                            transition: .25s;
+
+                            @include desktop{
+                                background-color: #fff;
+                            }
+                        }
+                        
+                        @include desktop{
+                            color: #ffff;
+                        }
+
+                        &:hover{
+                            &:after{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    .imagem-menu{
+            display: inline-flex;
+            flex-wrap: initial;
+            width: 100%;
+            justify-content: center;
+            @include desktop{
+                display: none;
+            }
+            img{
+                display: inline-flex;
+                height: auto;
+                padding: 40px;
+            }
+        }
+    }
+}
