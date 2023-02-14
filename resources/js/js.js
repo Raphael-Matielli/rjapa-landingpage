@@ -32,14 +32,9 @@ $(document).ready(function(){
         e.preventDefault();
         var id = $(this).attr('href'),
         targeOffset = $('.'+id).offset().top;
-
+        console.log("Hello World");
         $('html, body').animate({
             scrollTop: targeOffset - 100
         }, 500);
-    });
-    
-    function myFunction() {
-        console.log("Hello World");
-    }
-        
+    });        
 });
