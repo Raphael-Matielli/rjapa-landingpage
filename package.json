@@ -1,11 +1,8 @@
 {
+  
   "dependencies": {
     "save-dev": "^0.0.1-security"
-  },
-  "name": "rjapa-landingpage",
-  "description": "Este é meu primeiro site, projetei ele usando Node.Js, PHP, sass.\r Então para hospedar estou tentando converter todo o site apenas para html, css e javascript.",
-  "version": "1.0.0",
-  "main": "index.js",
+  },  
   "devDependencies": {
     "gulp": "^4.0.2"
   },
