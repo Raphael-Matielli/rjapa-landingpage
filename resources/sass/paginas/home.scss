@@ -104,7 +104,10 @@
                     font-size: 18px;
                     margin: 0  0 50px 0;
                     line-height: 35px;
-                    width: auto;                               
+                    width: max-content;
+                    &:after{
+                        max-width: 100%;
+                    }                                    
 
                     @include tablet{
                         font-size: 28px;
@@ -156,7 +159,7 @@
             width: auto;
             display: block;
             margin: 0 auto 50px auto;
-            font-size: 30px;
+            font-size: 28px;
             line-height: 48px;
             font-family: 'Montserrat Medium';
             color: #fff;
@@ -203,7 +206,10 @@
                     font-size: 18px;
                     margin: 0  0 50px 0;
                     line-height: 35px;
-                    width: auto; 
+                    width: max-content;
+                    &:after{
+                        max-width: 100%
+                    } 
                     
                     @include tablet{
                         font-size: 28px;
@@ -252,7 +258,7 @@
     background-color: #f5f5f5;
     .conteudo{
         .titulo{
-            width: auto;
+            width: max-content;
             display: block;
             margin: 0 auto 50px auto;
             font-size: 30px;
