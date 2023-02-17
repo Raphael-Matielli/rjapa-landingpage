@@ -17,7 +17,7 @@
         }
         .texto{
             width: 100%;
-            color: white;            
+            color: white;
             @include desktop{
                 width: 50%;
             }
@@ -34,6 +34,12 @@
                     line-height: 26px;
                     font-family: 'Montserrat Regular';
                     margin-bottom: 39px;
+                    text-align: initial;
+                    text-justify: initial;
+                    @include desktop{
+                        text-align: justify;
+                        text-justify: inter-word;                        
+                    }
                 }
             }            
             .btn-principal{
@@ -129,7 +135,12 @@
                         line-height: 26px;
                         margin-bottom: 30px;
                         font-family: 'Montserrat Regular';
-                        
+                        text-align: initial;
+                        text-justify: initial;
+                            @include desktop{
+                                text-align: justify;
+                                text-justify: inter-word;                        
+                            }                        
                         &:last-child{
                             margin-bottom: 0px;
                         }
@@ -231,7 +242,12 @@
                         margin-bottom: 30px;
                         font-family: 'Montserrat Regular';
                         color: #fff;
-                        
+                        text-align: initial;
+                        text-justify: initial;
+                            @include desktop{
+                                text-align: justify;
+                                text-justify: inter-word;                        
+                            }                        
                         &:last-child{
                             margin-bottom: 0px;
                         }
