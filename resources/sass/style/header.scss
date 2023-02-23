@@ -65,6 +65,9 @@ header{
                 right: 0;
                 &:before{
                     width: 100vw;
+                    @include desktop{
+                        display: none;
+                    }
                 }
             }
             &:before{
